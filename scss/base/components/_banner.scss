@@ -41,7 +41,19 @@
     font-weight: 500;
     font-style: normal;
  }
- 
+
+ .banner .cont-titulo {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+ }
+
+ .banner .cont-titulo i {
+ margin-top: 8px;
+ margin-left:5px;
+ }
+
+
  .banner .cont-p p.text-banner {
     display:none;
  }
@@ -53,6 +65,7 @@
     font-family: "Sarabun", sans-serif;
     font-weight: 700;
     font-style: normal;
+    margin-left:20px !important;
  }
  
  .banner .titulobanner {

@@ -30,6 +30,7 @@ header {
     font-weight: 400;
     border-bottom: 3px solid #fff;
     font-size: map-get($fontSize, fonts18 );
+    padding:0.625rem !important;
   
  }
  
@@ -40,7 +41,7 @@ header {
  
  a.nav-link {
     border-bottom: 3px solid #fff;
-    padding: 10px 15px 10px 15px;
+
  }
  
  ul.navbar-nav li a.nav-link:hover {
