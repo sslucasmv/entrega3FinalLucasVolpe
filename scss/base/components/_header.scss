@@ -1,0 +1,109 @@
+
+body {
+
+    background-color: map-get($bgColor, Body);
+    
+}
+
+/* elementos menu top  */
+
+/* #### HEADER #### */
+
+header {
+   background-color: map-get($bgColor,Header);
+}
+
+.logo img {
+    width: 12.5rem;
+    height: 3.4375rem;
+ }
+ 
+ /* menu top */
+ 
+ .nav-fs {
+    font-size: 1.125rem;
+ }
+ 
+ ul.navbar-nav li a { 
+    color:#666 ;
+    font-family: "Inter Tight", sans-serif !important;
+    font-weight: 400;
+    border-bottom: 3px solid #fff;
+    font-size: map-get($fontSize, fonts18 );
+  
+ }
+ 
+ ul.navbar-nav li a:hover {
+    color: #1A3755;
+    background-color: #ddd;
+ }
+ 
+ a.nav-link {
+    border-bottom: 3px solid #fff;
+    padding: 10px 15px 10px 15px;
+ }
+ 
+ ul.navbar-nav li a.nav-link:hover {
+    color:#444;
+    display: flex;
+    border-bottom: 3px solid #ddd ;
+    background-color: #fafafa;
+ } 
+ 
+ ul.navbar-nav li a.active {
+    color: skyblue;
+    border-bottom: 3px solid #029DCA;
+ }
+ 
+ .redes {
+    height:100px;
+    display: none;
+    color: #fafafa;
+    background-color: map-get($bgColor , SocialBar );
+    }
+
+
+ .link-dnone{
+    text-decoration: none;
+ }
+
+
+ .social-bar {
+   display: flex;
+   flex-direction: row;
+   justify-content: end;
+   margin-top:0.4375rem;
+
+                        li {
+                           
+                           margin-right: 5px;
+                     
+                        }
+
+                        li.separador {
+
+                           font-size: 14px;
+                           padding-left: 5px;
+                           padding-right: 5px;
+
+                        }
+                     
+                        i {
+                           font-size: map-get($fontSize, fonts15);
+                           margin-left: 5px; 
+                        }
+
+                        a i {
+                           font-size: map-get($fontSize, fonts12);
+                           margin-right: 5px;
+                        }
+
+                        span {
+                           display: inline-block;
+                           margin-right: 5px;
+                        }
+
+ 
+}
+
+

@@ -1,0 +1,382 @@
+
+/* final estilos mobile first */
+
+
+
+
+@media only screen and (min-width:320px){
+   
+    .map-google {
+        width:100%;
+        height:16rem;
+    }
+
+
+    section h1.title1 , section h2.title2 {
+        padding-bottom: 0.9375rem;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: .9375rem;
+        font-size:map-get($fontSize, fonts28 );
+
+    }
+
+    .section-main h1 {
+        border-bottom: 1px solid #EBAD69;
+    }
+    
+
+
+    .section-main {
+        padding-top: 20px;
+    }
+
+    .section-main p {
+        font-size: map-get($fontSize, fonts16 );
+    }
+
+    .list-default {
+        margin:0.625rem 0;
+        padding:0.625rem 0 0 0;
+    }
+
+    .m-top {
+        margin-top: 1px;
+    }
+
+
+
+ }
+
+ @media only screen and (min-width:320px) and (max-width: 760px){
+
+    .divider-sm {
+        border-top:1px solid #ccc;
+        padding-top: 20px;
+    }
+
+}
+
+ 
+ /* version tablet */
+ 
+ @media only screen and (min-width:600px){
+    
+
+    .map-google {
+        width:100%;
+        height:20rem;
+    }
+ 
+    h3.ds-none {
+        display: none !important;
+    }
+ 
+    .map-google {
+        width:100%;
+        height:18rem;
+    }
+ 
+    .col-sm-ds-none {
+        display: none;
+ 
+    }
+ 
+    .col-md-ds-none {
+        display: none;
+ 
+    }
+
+ 
+
+ }
+ 
+ @media only screen and (min-width:720px){
+    
+
+    h3.ds-none {
+        display:none !important
+    }
+ 
+   .map-google {
+        width:100%;
+        height:18rem;
+    }
+ 
+    .col-sm-ds-none {
+        display: none;
+    }
+ 
+    .col-md-ds-none {
+        display:none;
+    }
+ 
+    .ds-lg-none {
+        display: none !important;
+    }
+
+
+  
+ }
+ 
+ @media only screen and (min-width:748px){
+    
+
+    h3.ds-none {
+        display:block !important
+    }
+ 
+    .map-google {
+        width:100%;
+        height:18rem;
+    }
+ 
+    .col-sm-ds-none {
+        display: none;
+    }
+ 
+    .col-md-ds-none {
+        display:block;
+    }
+ 
+    li.ds-lg-none {
+        display:none !important;
+    }
+
+   
+ 
+ 
+ }
+ 
+ @media only screen and (min-width:768px){
+ 
+    .card-f{
+        min-height:140px;
+ 
+ 
+    }
+    .card-f.mheight {
+        min-height: 140px !important;
+    }
+
+   
+
+
+ 
+ }
+ 
+ /* pantallas de escritorio */
+ 
+ @media only screen and (min-width:940px){
+
+    .cont-cards {
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 15px;
+    }
+
+    .card-default {
+        width: 33%;
+
+
+    }
+   
+    .col-sm-ds-none {
+        display: block;
+    }
+ 
+    li.ds-lg-none {
+        display:none !important;
+    }
+ 
+    .col-md-ds-none {
+        display: block;
+    }
+ 
+
+ 
+    .ds-none {
+        display: block;
+    }
+  
+    .jcflex-end {
+        justify-content: flex-end;
+    }
+ 
+    .display-v {
+        display: flex !important;
+    }
+ 
+    /* banner mas alto  */
+ 
+    .banner { 
+        display:flex;
+        height:22.5rem ;
+    }
+ 
+    .banner .cont-p p.text-banner {
+        display: flex;
+     }
+    
+ 
+    .titulobanner {
+        display: none;
+    }
+ 
+    .banner .cont-p {
+        width: 60%;
+        padding:10px 30px 5px 30px;
+        border-radius: 4px;
+    }
+ 
+    p.text-banner {
+        display: flex;
+        color:#fff; 
+        font-size: map-get($fontSize, fonts22); 
+    }
+ 
+    /* comentarios clientes - booking  */
+     .titulo-booking {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+ 
+    .titulo-booking h2 {
+        font-size: map-get($fontSize, fonts20);
+    }
+ 
+    .titulo-booking h3 {
+        font-size: map-get($fontSize, fonts16);
+    }
+ 
+    .titulo-booking h4 {
+        font-size: map-get($fontSize, fonts14);
+    }
+ 
+    /* comentarios booking - card commentarios  */
+ 
+    .cont-comment {
+        @include flex-row-space-evenly;
+        width: 100%;
+        height: auto;
+        gap: 5px;
+        margin-top:1.875rem;
+        padding-bottom: 1.25rem;
+    }
+ 
+    .cont-comment .card-comment {
+        padding:0.975rem;
+        border: 1px solid #ccc;
+        background-color: #fafafa;
+        width: 20rem;
+        min-height: 15rem;
+        border-radius: 4px;
+        box-shadow: 0 0px 3px 0px rgba(0, 0, 0, 0.1), 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    }
+ 
+    .cont-comment .card-comment .card-comment-header {
+        @include flex-row-start;
+    }
+ 
+    .cont-comment .card-comment .avatar {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 150px;
+        background-color: #666;
+        border: 3px solid #C0CAD1;
+    }
+ 
+    .title-user {
+       @include flex-col;
+    }
+ 
+    .comment-name {
+        color:#063855;
+        font-size: map-get($fontSize, fonts18);
+        margin-left: .9375rem;
+        margin-TOP:15px;
+    }
+ 
+    .comment-stars {
+        margin-left:1rem;
+    }
+ 
+    .card-comment blockquote {
+        margin: 0.600rem;
+        padding: .875rem !important;
+    }
+ 
+    .p-comment {
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 500;
+        font-size: map-get($fontSize, fonts16); 
+    }
+ 
+    /* end card comments */
+ 
+    /* google maps */
+ 
+        .map-google {
+        width:100%;
+        height:20rem;
+    }
+ 
+    /* formulario contacto */
+ 
+    .form-label {
+        font-weight:600;
+    }
+ 
+ 
+    ::placeholder {
+        color: #ccc !important;
+        opacity: 1; /* Firefox */
+    }
+ 
+    /* header - redes */
+ 
+    .redes {
+        display: flex;
+        height: 2.1875rem;
+        color: #fafafa;
+     
+    }
+ 
+    .redes nav ul {
+        @include flex-row-end;
+        list-style: none;
+        margin-top: 0.375rem !important;
+    }
+ 
+    .redes nav ul li {
+        margin-top: .3125rem;
+        margin-left: .625rem;
+        font-size: map-get($fontSize, fonts15);   
+    }
+ 
+    .fa-instagram , .fa-facebook-square , .icon-ws-footer{
+        font-size: 1.125rem !important;
+        color: #fafafa;
+        margin-top: .25rem;
+        margin-left: .50rem;
+    }
+ 
+    .fa-instagram:hover , .fa-facebook-square:hover {
+        color: #ccc;
+    }
+ 
+    .text-gray {
+        color:#ccc;
+    }
+
+   
+ 
+ }
+ 
+ @media only screen and (min-width:992px){
+ 
+    .card-f.mheight {
+        min-height: 210px !important;
+    }
+ 
+ }

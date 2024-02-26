@@ -1,0 +1,130 @@
+
+/* cards default */
+
+.cont-cards {
+    display: flex;
+    flex-direction:column;
+ }
+ 
+ .card-h img {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    width: 100%;
+ }
+ 
+ .card-default {
+               display: flex;
+               flex-direction: column;
+                border:1px solid #ddd ;
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+                transition: transform .5s;
+                width: 100%;
+
+                &:hover {
+                    border:1px solid #999 ;
+                    transform: scale(1.02);
+                }       
+}
+ 
+ .card-f {
+            background-color:map-get($bgColorComponents , CardFooter );
+            height: auto;
+            padding: .625rem;
+       
+           
+            
+       
+ }
+
+ .card-f h2 {
+    font-size: 1.125rem;
+ }
+ 
+ .card-f.mheight {
+    min-height: auto;
+ }
+
+ 
+/* card personalizada  commentarios   */
+
+.titulo-booking {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }
+ 
+ .titulo-booking h2 {
+    font-size:1.125rem;
+ }
+ 
+ .titulo-booking h3 {
+    font-size: 1rem;
+ }
+ 
+ .titulo-booking h4 {
+    font-size: .875rem;
+ }
+ 
+ .cont-comment {
+    @include flexColSE;
+     width: 100%;
+     height: auto;
+     margin-top:1.875rem;
+     padding-bottom: 1.25rem;
+ }
+ 
+ .cont-comment .card-comment {
+     padding:0.975rem;
+     border: 1px solid #ccc;
+     background-color:map-get($bgColorComponents, CardComment );
+     width:100%;
+     margin-bottom: 10px;
+     min-height: 140;
+     border-radius: 4px;
+     box-shadow: 0 0px 3px 0px rgba(0, 0, 0, 0.1), 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+ }
+ 
+ .cont-comment .card-comment .card-comment-header {
+    @include flex-row-start;
+ }
+ 
+ .cont-comment .card-comment .avatar {
+     width: 4rem;
+     height: 4rem;
+     border-radius: 150px;
+     background-color: map-get($bgColorComponents ,CardAvatar );
+     border: 3px solid #C0CAD1;
+ }
+ 
+ .title-user {
+    @include  flex-col;
+ }
+ 
+ .comment-name {
+     color:#063855;
+     font-size: map-get($fontSize, fonts16);
+     margin-left: .9375rem;
+     margin-TOP:5px;
+ }
+ 
+ .comment-stars {
+     margin-left:1rem;
+ }
+ 
+ .card-comment blockquote {
+     margin:0.3125rem;
+     padding: .800rem;
+ }
+ 
+ .p-comment {
+    font-size: map-get($fontSize, fonts14);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 500;
+        
+ }
+ 
+ main {
+    border-top: 4px solid #1A3755;
+ }
+ 
